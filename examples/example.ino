@@ -1,5 +1,4 @@
 #include <Arduino.h>
-
 #include "MQ2.h"
 
 int pinMQ2 = 35;
@@ -14,6 +13,6 @@ void setup() {
 }
 
 void loop() {
-  float mq2Ppm = mq2.readPpm();
+  float mq2Ppm = mq2.getPPM();
   Serial.println(mq2Ppm);
 }
