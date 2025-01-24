@@ -6,7 +6,7 @@ MQ2::MQ2(uint8_t pin, float v_input, float v_range) {
   v_ran = v_range;
 }
 
-float MQ2::readPpm() {
+float MQ2::getPPM() {
   vrl = analogRead(analogPin) * (v_in / v_ran);
   rs = ((v_in * RL) / vrl) - RL;
   ratio = rs / RO;

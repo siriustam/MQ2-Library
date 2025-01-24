@@ -22,7 +22,7 @@ class MQ2 {
   float ppm;
 
   MQ2(uint8_t pin, float v_input, float v_range);
-  float readPpm();
+  float getPPM();
 };
 
 #endif
